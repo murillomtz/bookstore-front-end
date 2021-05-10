@@ -5,11 +5,11 @@ import { LivroService } from './../livro.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-livro-update',
-  templateUrl: './livro-update.component.html',
-  styleUrls: ['./livro-update.component.css']
+  selector: 'app-livro-delete',
+  templateUrl: './livro-delete.component.html',
+  styleUrls: ['./livro-delete.component.css']
 })
-export class LivroUpdateComponent implements OnInit {
+export class LivroDeleteComponent implements OnInit {
 
   id_cat: String = ""
 
@@ -57,13 +57,13 @@ export class LivroUpdateComponent implements OnInit {
     })
   }
 
-  update(): void {
-    this.service.update(this.livro).subscribe((resposta) => {
+  delete(): void {
+    this.service.delete(this.livro.id).subscribe(() => {
       this.router.navigate([`categorias/${this.id_cat}/livros`])
-      this.service.mensagem("Livro atualizado com sucesso!")
+      this.service.mensagem('Livro deletado com sucesso!')
     }, err => {
       this.router.navigate([`categorias/${this.id_cat}/livros`])
-      this.service.mensagem("Falha ao atualizar livro")
+      this.service.mensagem('Falha ao deletar livro, tente mais trade...')
     })
   }
 

@@ -38,6 +38,11 @@ export class LivroService {
     return this.http.post<Livro>(url, livro)
   }
 
+  delete(id: String): Observable<void> {
+    const url = `${this.baseUrl}/livros/${id}`
+    return this.http.delete<void>(url)
+  }
+
   /**Mensagem que aparece na telega, janele flutuente */
   mensagem(str: String): void {
     this._snack.open(`${str}`, 'OK', {

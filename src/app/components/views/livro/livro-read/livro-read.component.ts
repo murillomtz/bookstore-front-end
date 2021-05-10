@@ -1,15 +1,16 @@
-import { Livro } from './../livro.model';
-import { Validators, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { LivroService } from './../livro.service';
+import { FormControl, Validators } from '@angular/forms';
+import { Livro } from './../livro.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-livro-update',
-  templateUrl: './livro-update.component.html',
-  styleUrls: ['./livro-update.component.css']
+  selector: 'app-livro-read',
+  templateUrl: './livro-read.component.html',
+  styleUrls: ['./livro-read.component.css']
 })
-export class LivroUpdateComponent implements OnInit {
+export class LivroReadComponent implements OnInit {
+
 
   id_cat: String = ""
 
@@ -55,29 +56,6 @@ export class LivroUpdateComponent implements OnInit {
     this.service.findByid(this.livro.id).subscribe((resposta) => {
       this.livro = resposta
     })
-  }
-
-  update(): void {
-    this.service.update(this.livro).subscribe((resposta) => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`])
-      this.service.mensagem("Livro atualizado com sucesso!")
-    }, err => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`])
-      this.service.mensagem("Falha ao atualizar livro")
-    })
-  }
-
-  getMessage() {
-    if (this.titulo.invalid) {
-      return "O campo TITULO deve conter entre 3 a 100 caracteres";
-    }
-    if (this.nome_autor.invalid) {
-      return "O campo NOME_AUTOR deve conter entre 3 a 100 caracteres";
-    }
-    if (this.texto.invalid) {
-      return "O campo TEXTO deve conter entre 10 a 2.000.000 caracteres";
-    }
-    return false;
   }
 
 }
