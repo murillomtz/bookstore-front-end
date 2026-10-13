@@ -41,6 +41,15 @@ yarn-error.log
 testem.log
 /typings
 
+# Capturas locais temporarias e arquivos JPG antigos substituidos pelos PNGs
+/work/
+/docs/screenshots/categorias.jpg
+/docs/screenshots/inicio.jpg
+/docs/screenshots/livros.jpg
+/docs/screenshots/Bookstore Angular - Categorias.jpg
+/docs/screenshots/Bookstore Angular - Livros por categoria.jpg
+/docs/screenshots/Bookstore Angular - Pagina inicial.jpg
+
 # System Files
 .DS_Store
 Thumbs.db
