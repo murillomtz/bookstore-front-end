@@ -1,0 +1,66 @@
+[
+  {
+    "project": "Bookstore Angular",
+    "page": "Pagina inicial",
+    "kind": "web",
+    "width": 1440,
+    "height": 900,
+    "output": "Bookstore Angular - Inicio.png",
+    "destination": "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Inicio.png",
+    "copies": [
+      "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Inicio.png"
+    ],
+    "selecionada": true,
+    "origem": "Captura da interface atual em execucao local no Edge; Angular em localhost:4301 e API de demonstracao Bookstore/H2 em localhost:8083. Screenshot revisada visualmente; sem edicao.",
+    "dimensoesPadronizadas": true,
+    "sha256": "2682057de3762777b73f6ff0a8c5e0bba0d76d16b8fa8d44dc47694b0cea0e53"
+  },
+  {
+    "project": "Bookstore Angular",
+    "page": "Categorias",
+    "kind": "web",
+    "width": 1440,
+    "height": 900,
+    "output": "Bookstore Angular - Categorias.png",
+    "destination": "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Categorias.png",
+    "copies": [
+      "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Categorias.png"
+    ],
+    "selecionada": true,
+    "origem": "Captura da interface atual em execucao local no Edge; Angular em localhost:4301 e API de demonstracao Bookstore/H2 em localhost:8083. Screenshot revisada visualmente; sem edicao.",
+    "dimensoesPadronizadas": true,
+    "sha256": "740227233db9eef49916785a6ca5216cd2010c052ac0638d45c667c268ed918f"
+  },
+  {
+    "project": "Bookstore Angular",
+    "page": "Livros por categoria",
+    "kind": "web",
+    "width": 1440,
+    "height": 900,
+    "output": "Bookstore Angular - Livros por categoria.png",
+    "destination": "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Livros por categoria.png",
+    "copies": [
+      "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Livros por categoria.png"
+    ],
+    "selecionada": true,
+    "origem": "Captura da interface atual em execucao local no Edge; Angular em localhost:4301 e API de demonstracao Bookstore/H2 em localhost:8083. Screenshot revisada visualmente; sem edicao.",
+    "dimensoesPadronizadas": true,
+    "sha256": "611bc176bcd06e8e17b204eea878cfa41066402265dff77e48285bad7e97a623"
+  },
+  {
+    "project": "Bookstore Angular",
+    "page": "Leitura do livro",
+    "kind": "web",
+    "width": 1440,
+    "height": 900,
+    "output": "Bookstore Angular - Leitura do livro.png",
+    "destination": "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Leitura do livro.png",
+    "copies": [
+      "C:\\Users\\Murillo\\Downloads\\site pessoal\\Capturas prontas\\parte2\\Bookstore Angular - Leitura do livro.png"
+    ],
+    "selecionada": true,
+    "origem": "Captura da interface atual em execucao local no Edge; Angular em localhost:4301 e API de demonstracao Bookstore/H2 em localhost:8083. Screenshot revisada visualmente; sem edicao.",
+    "dimensoesPadronizadas": true,
+    "sha256": "5fe8ffc7480337920b33519b7e948dba45a12f053b725aa1292cab3efdb3a2ca"
+  }
+]

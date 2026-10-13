@@ -1,4 +1,15 @@
-<mat-card class="home mat-elevation-z4">
-    <mat-card-title class="title"> Bem vidon! </mat-card-title>
-    <mat-card-subtitle class="subtitle">Sistema para exemplificar um CRUD usando Angular e Spring Boot</mat-card-subtitle>
-</mat-card>
+<section class="welcome" aria-labelledby="welcome-title">
+  <div><span class="eyebrow">SUA BIBLIOTECA PESSOAL</span><h1 id="welcome-title">Boas histórias merecem<br>um lugar especial.</h1><p>Organize seu acervo, encontre sua próxima leitura<br class="desktop-break"> e mantenha suas ideias sempre por perto.</p></div>
+  <span class="welcome-note"><span class="small-line"></span>Entre páginas e possibilidades.</span>
+</section>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy"><span class="hero-label"><span></span> MAIS ESPAÇO PARA SUAS HISTÓRIAS</span><h2 id="hero-title">Seu universo.<br>Livro por livro.</h2><p>Uma coleção organizada abre caminho para novas descobertas. Explore suas categorias e dê vida à sua biblioteca.</p><a class="hero-action" routerLink="/categorias">Explorar meu acervo <mat-icon>arrow_forward</mat-icon></a></div>
+  <div class="book-scene" aria-hidden="true"><div class="scene-circle"></div><span class="scene-star star-one">✦</span><span class="scene-star star-two">✦</span><div class="book book-back"><span>IDEIAS<br>QUE FICAM</span><i></i></div><div class="book book-front"><span class="book-edition">A BIBLIOTECA PESSOAL</span><span class="book-title">Entre<br>páginas.</span><span class="book-flower">✳</span><span class="book-bottom">UM MUNDO PARA DESCOBRIR</span></div><div class="book-horizontal"></div><span class="scene-caption">CADA LIVRO, UMA NOVA POSSIBILIDADE</span></div>
+</section>
+<section class="quick-access" aria-labelledby="quick-title">
+  <div class="section-heading"><h2 id="quick-title">Tudo no seu lugar</h2><span>Seu próximo capítulo começa aqui</span></div>
+  <div class="access-grid">
+    <a class="access-card" routerLink="/categorias"><span class="access-icon"><mat-icon>auto_stories</mat-icon></span><div><h3>Explore seu acervo</h3><p>Encontre categorias e visite seus livros.</p></div><mat-icon class="card-arrow">arrow_forward</mat-icon></a>
+    <a class="access-card" routerLink="/categorias/create"><span class="access-icon warm"><mat-icon>create_new_folder</mat-icon></span><div><h3>Abra uma nova coleção</h3><p>Crie uma categoria para novas descobertas.</p></div><mat-icon class="card-arrow">arrow_forward</mat-icon></a>
+  </div>
+</section>

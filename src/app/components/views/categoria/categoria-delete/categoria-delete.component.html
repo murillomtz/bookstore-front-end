@@ -1,5 +1,6 @@
-<form>
-    <h1>DELETANDP CATEGORIA</h1>
+<form class="editor-form">
+    <h1>Excluir categoria</h1>
+    <p class="delete-note">Confirme os dados antes de excluir. Esta ação não pode ser desfeita.</p>
 
     <mat-form-field class="form">
         <mat-label>Nome</mat-label>
@@ -12,8 +13,8 @@
     </mat-form-field>
 
     <div class="buttons">
-        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETAR </button>
-        <button routerLink="/categorias" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+        <button type="button" class="danger-action" (click)="delete()" mat-stroked-button color="primary"> Excluir </button>
+        <button type="button" routerLink="/categorias" mat-stroked-button color="warn"> Cancelar </button>
     </div>
 
 </form>

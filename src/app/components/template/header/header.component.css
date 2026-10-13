@@ -1,19 +1,17 @@
-img {
-    height: 3rem;
-}
-
-.header {
-    justify-content: center;
-    height: 10%;
-}
-
-span {
-    display: flex;
-    align-items: center;
-}
-
-h1 {
-    padding-left: 1.2rem;
-    font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
-}
+:host { display: block; background: var(--surface); border-bottom: 1px solid var(--border); }
+.header { max-width: 1280px; margin: auto; padding: 22px 40px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
+.brand-icon { display: grid; place-items: center; width: 46px; height: 46px; background: var(--green); color: white; border-radius: 14px; }
+.brand-icon mat-icon { width: 26px; height: 26px; font-size: 26px; }
+.brand-name { font-family: Georgia, serif; font-size: 28px; letter-spacing: -1px; line-height: 1.1; }
+.brand-caption { display: block; font-family: var(--font-body); font-size: 9px; font-weight: 600; letter-spacing: 1.6px; margin-top: 7px; color: var(--muted); }
+.navigation { display: flex; gap: 5px; padding: 5px; border: 1px solid var(--border); border-radius: 100px; background: var(--background); }
+.navigation a { display: flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 100px; text-decoration: none; color: var(--muted); font-size: 13px; font-weight: 600; transition: background .2s, color .2s; }
+.navigation mat-icon { font-size: 19px; width: 19px; height: 19px; }
+.navigation a:hover { color: var(--green); background: var(--green-light); }
+.navigation a.active { color: white; background: var(--green); box-shadow: 0 3px 8px #183f3220; }
+.header-action { display: flex; align-items: center; gap: 7px; color: var(--green); text-decoration: none; font-size: 13px; font-weight: 600; }
+.header-action:hover { text-decoration: underline; }
+.skip-link { position: absolute; top: -100px; left: 16px; z-index: 10; background: var(--green); color: white; padding: 12px 18px; border-radius: 8px; }
+.skip-link:focus { top: 12px; }
+@media (max-width: 760px) { .header { padding: 20px; flex-wrap: wrap; gap: 20px; } .navigation { order: 3; width: 100%; } .navigation a { flex: 1; justify-content: center; padding: 11px 12px; } .header-action span { display: none; } .header-action { border: 1px solid var(--border); padding: 9px; border-radius: 50%; } }

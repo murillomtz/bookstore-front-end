@@ -1,8 +1,9 @@
-<form>
-    <h1>DELETANDO LIVRO</h1>
+<form class="editor-form">
+    <h1>Excluir livro</h1>
+    <p class="delete-note">Confirme os dados antes de excluir. Esta ação não pode ser desfeita.</p>
 
     <mat-form-field class="form">
-        <mat-label>Titulo</mat-label>
+        <mat-label>Título</mat-label>
         <input matInput [(ngModel)]="livro.titulo" type="text" name="titulo" disabled>
 
     </mat-form-field>
@@ -20,8 +21,8 @@
     </mat-form-field>
 
     <div class="buttons">
-        <button (click)="delete()" class="mat-elevation-z8" mat-stroked-button color="primary"> DELETAR </button>
-        <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn"> CANCELAR </button>
+        <button type="button" class="danger-action" (click)="delete()" mat-stroked-button color="primary"> Excluir </button>
+        <button type="button" (click)="cancel()" mat-stroked-button color="warn"> Cancelar </button>
     </div>
 
 </form>

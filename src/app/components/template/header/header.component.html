@@ -1,8 +1,9 @@
-<mat-toolbar class="header">
-    <span>
-        <img src="assets/img/livro.png" alt="">
-    </span>
-    <span>
-        <h1>BOOKSTORE APPLICATION</h1>
-    </span>
-</mat-toolbar>
+<a class="skip-link" href="#main-content">Ir para o conteúdo</a>
+<header class="header">
+  <a class="brand" routerLink="/" aria-label="Bookstore, página inicial"><span class="brand-icon"><mat-icon>auto_stories</mat-icon></span><span class="brand-name">bookstore<span class="brand-caption">SEU ACERVO, BEM CUIDADO</span></span></a>
+  <nav class="navigation" aria-label="Navegação principal">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" #homeLink="routerLinkActive" [attr.aria-current]="homeLink.isActive ? 'page' : null"><mat-icon>grid_view</mat-icon><span>Início</span></a>
+    <a routerLink="/categorias" routerLinkActive="active" #catalogLink="routerLinkActive" [attr.aria-current]="catalogLink.isActive ? 'page' : null"><mat-icon>menu_book</mat-icon><span>Meu acervo</span></a>
+  </nav>
+  <a class="header-action" aria-label="Nova categoria" routerLink="/categorias/create"><mat-icon>add</mat-icon><span>Nova categoria</span></a>
+</header>

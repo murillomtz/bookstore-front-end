@@ -41,25 +41,27 @@ Acesse `http://localhost:4200`. Para compilar a interface, use `npm run build`.
 
 ## Execução das capturas
 
-O frontend foi compilado e conectado à API original, executada com o perfil `test` e H2. A URL da API foi alterada somente na cópia local para `http://localhost:8083/`.
+Capturas realizadas em 13/10/2026 na interface atualizada. A aplicação Angular foi compilada e servida localmente na porta 4301, conectada ao backend Bookstore de demonstração com perfil `test` e H2 em memória na porta 8083. A URL local da API foi usada apenas durante a captura; `environment.ts` foi restaurado ao final.
 
-As imagens mostram a página inicial, as três categorias da massa de demonstração do backend e os livros Clean Code e Engenharia de Software da categoria Informática. O H2 foi iniciado em memória somente no ambiente de captura. A página inicial possui pouco conteúdo no layout original; as listagens demonstram a consulta de dados. Essa coleta confirma a leitura de dados; não representa uma verificação de todas as operações de cadastro e exclusão.
+As imagens mostram a página inicial, as categorias retornadas pela API, os livros da categoria Informática e a leitura de Clean Code. As quatro capturas foram feitas no Edge em **1440 × 900 pixels**.
 
 ## Capturas do sistema
 
-Capturas reais obtidas no navegador interno em 13/10/2026. Imagens web em **1440 × 900 pixels**, com cabeçalho, navegação lateral e rodapé visíveis.
-
 ### Página inicial
 
-![Página inicial](docs/screenshots/inicio.jpg)
+![Página inicial atualizada](docs/screenshots/Bookstore%20Angular%20-%20Inicio.png)
 
-### Categorias recebidas da API
+### Categorias
 
-![Categorias recebidas da API](docs/screenshots/categorias.jpg)
+![Categorias carregadas da API](docs/screenshots/Bookstore%20Angular%20-%20Categorias.png)
 
-### Livros da categoria
+### Livros por categoria
 
-![Livros da categoria](docs/screenshots/livros.jpg)
+![Livros da categoria Informática](docs/screenshots/Bookstore%20Angular%20-%20Livros%20por%20categoria.png)
+
+### Leitura do livro
+
+![Detalhe de leitura de Clean Code](docs/screenshots/Bookstore%20Angular%20-%20Leitura%20do%20livro.png)
 
 ## Histórico
 
