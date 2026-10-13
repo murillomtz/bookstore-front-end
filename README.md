@@ -43,11 +43,11 @@ Acesse `http://localhost:4200`. Para compilar a interface, use `npm run build`.
 
 O frontend foi compilado e conectado à API original, executada com o perfil `test` e H2. A URL da API foi alterada somente na cópia local para `http://localhost:8083/`.
 
-As imagens mostram a página inicial, as categorias cadastradas pela massa de demonstração do backend e os livros de uma dessas categorias. Essa coleta confirma a leitura de dados; não representa uma verificação de todas as operações de cadastro e exclusão.
+As imagens mostram a página inicial, as três categorias da massa de demonstração do backend e os livros Clean Code e Engenharia de Software da categoria Informática. O H2 foi iniciado em memória somente no ambiente de captura. A página inicial possui pouco conteúdo no layout original; as listagens demonstram a consulta de dados. Essa coleta confirma a leitura de dados; não representa uma verificação de todas as operações de cadastro e exclusão.
 
 ## Capturas do sistema
 
-Capturas reais obtidas em execução local em 12/10/2026.
+Capturas reais obtidas no navegador interno em 13/10/2026. Imagens web em **1440 × 900 pixels**, com cabeçalho, navegação lateral e rodapé visíveis.
 
 ### Página inicial
 
